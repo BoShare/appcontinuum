@@ -2,6 +2,8 @@
 
 The evolution of a component based architecture
 
+[![Build Status](https://travis-ci.org/barinek/appcontinuum.svg?branch=master)](https://travis-ci.org/barinek/appcontinuum)
+
 See Git tags for step-by-step notes.
 
 ```
@@ -20,6 +22,22 @@ v10             Circuit Breaker
 ```
 
 ### Database Setup
+
+#### Redis
+```
+brew install redis
+```
+
+Modify /usr/local/etc/redis.conf
+
+```
+requirepass foobared
+```
+
+#### MySQL
+```
+brew install mysql
+```
 
 ```
 for database_name in 'allocations' 'backlog' 'registration' 'timesheets'; do   

@@ -1,6 +1,6 @@
 create table users (
   id bigint(20) not null auto_increment,
-  name varchar(256),
+  name varchar(255),
 
   primary key (id),
   unique key name (name)
@@ -11,7 +11,7 @@ default charset = utf8;
 create table accounts (
   id bigint(20) not null auto_increment,
   owner_id bigint(20),
-  name varchar(256),
+  name varchar(255),
 
   primary key (id),
   unique key name (name),
@@ -23,7 +23,7 @@ default charset = utf8;
 create table projects (
   id bigint(20) not null auto_increment,
   account_id bigint(20),
-  name varchar(256),
+  name varchar(255),
   active bit(1) not null default b'1',
 
   primary key (id),
